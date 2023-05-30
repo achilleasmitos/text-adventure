@@ -110,3 +110,8 @@ void Creature::set_ability_score(int ability_score, int value)
 }
 
 std::string Creature::get_creature_type() { return m_creature_type; };
+
+void Creature::set_creature_type(std::string creature_type)
+{
+	m_creature_type = creature_type;
+}

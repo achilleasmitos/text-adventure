@@ -40,6 +40,8 @@ public:
 
 	std::string get_creature_type();
 
+	void set_creature_type(std::string creature_type);
+
 protected:
 	int m_hp;
 	int m_ac;

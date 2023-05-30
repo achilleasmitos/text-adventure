@@ -58,6 +58,12 @@ void MainCharacter::set_name(std::string name)
 	}
 }
 
+std::string MainCharacter::get_class() { return m_class; }
+void MainCharacter::set_class(std::string player_class)
+{
+	m_class = player_class;
+}
+
 bool MainCharacter::CheckForAlphaOrWhitespace(std::string string)
 {
 	bool has_digit = false;

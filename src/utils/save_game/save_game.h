@@ -5,4 +5,4 @@
 /**
  * @brief A function that saves character stats in a txt document
  */
-void SaveGame(MainCharacter& main_characher);
+void SaveGame(MainCharacter& main_character);

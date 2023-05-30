@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 
-void SaveGame(MainCharacter& main_characher)
+void SaveGame(MainCharacter& main_character)
 {
 	std::ofstream output_file;
 
@@ -13,19 +13,19 @@ void SaveGame(MainCharacter& main_characher)
 	if (output_file.is_open())
 	{
 		output_file << "Ability Scores for: " << std::endl;
-		output_file << main_characher.get_name() << std::endl;
+		output_file << main_character.get_name() << std::endl;
 		output_file << "==============================" << std::endl;
 		output_file << "HP: " << std::endl;
-		output_file << main_characher.get_hp() << std::endl;
+		output_file << main_character.get_hp() << std::endl;
 		output_file << "AC: " << std::endl;
-		output_file << main_characher.get_ac() << std::endl;
+		output_file << main_character.get_ac() << std::endl;
 		output_file << "Speed: " << std::endl;
-		output_file << main_characher.get_speed() << std::endl;
+		output_file << main_character.get_speed() << std::endl;
 		std::string ability_scores[] = {"Strength: ", "Dexterity: ", "Constitution: ", "Intelligence: ", "Wisdom: ", "Charisma: "};
 		for (int i = 0; i < sizeof(ability_scores) / sizeof(ability_scores[0]); i++)
 		{
 			output_file << ability_scores[i] << std::endl;
-			output_file << main_characher.get_ability_score(i) << std::endl;
+			output_file << main_character.get_ability_score(i) << std::endl;
 		}
 		output_file << "==============================" << std::endl;
 		output_file << std::endl;
